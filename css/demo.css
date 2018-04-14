@@ -1,0 +1,137 @@
+
+/* レイアウト関係 */
+
+body {
+	font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size: 16px;
+}
+
+a { 
+	color           : #6C6;
+	text-decoration : none;
+}
+
+a:hover {
+	text-decoration : underline;
+}
+
+p {
+	margin      : 0 0 20px 0;
+	line-height : 24px;
+}
+
+img {
+	border: 0;
+}
+
+h1 {
+	font-weight      : bold;
+	font-style       : normal;
+}
+
+h2 {
+	font-size   : 40px; 
+	font-weight : bold;
+	line-height : 80px;
+}
+
+h3 {
+	font-size   : 20px;
+	font-weight : bold;
+	margin      : 1em 0;
+}
+
+
+#story-head {
+	color: #333;
+}
+
+#story-1 {
+	color: #FFF;
+	text-shadow: 1px 1px 1px #000;
+}
+
+#story-2 {
+	text-shadow: 1px 1px 1px #fff;
+}
+
+#story-3 {
+	color: #FFF;
+	text-shadow: 1px 1px 1px #000;
+}
+
+#story-4 {
+	color: #FFF;
+	text-shadow: 1px 1px 1px #000;
+}
+
+#story-5 {
+	color: #FFF;
+	text-shadow: 1px 1px 1px #000;
+}
+
+
+/* 動作関係 */
+
+#story-3 .txt_block {
+	width: 300px;
+	background: #000;
+	padding: 20px;
+	margin-bottom: 30px;
+}
+
+#story-4 .img_move { /* 画面に表示したときのスタイル */
+	position: absolute;
+	top: 0px;
+	right: 0;
+}
+#story-4 .img_move.start { /* 画面に入る前のスタイル */
+	top: 400px;
+}
+#story-4 .img_move.end { /* 画面から出た後のスタイル */
+	top: -400px;
+}
+
+
+#story-5 .img_move1 {
+	position: absolute;
+	top: 200px;
+	right: 300px;
+}
+#story-5 .img_move1.start {
+	top: 500px;
+}
+#story-5 .img_move1.end {
+	top: -100px;
+}
+
+#story-5 .img_move2 {
+	position: absolute;
+	top: 100px;
+	right: -200px;
+}
+#story-5 .img_move2.start {
+	top: -100px;
+}
+#story-5 .img_move2.end {
+	top: 300px;
+}
+
+#story-5 .txt_move1 {
+	position: absolute;
+	left: 0px;
+}
+#story-5 .txt_move1.start {
+	left: 100px;
+	opacity: 0;
+}
+
+#story-5 .txt_move2 {
+	position: absolute;
+	top: 100px;
+	left: 0px;
+}
+#story-5 .txt_move2.start {
+	left: 200px;
+	opacity: 0;
+}

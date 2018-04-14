@@ -15,9 +15,19 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/chrome.css">
+    <link rel="stylesheet" href="css/demo.css">
+
+    <script src="js/jquery-1.7.1.js"></script>
+    <script src="js/side-nav.js"></script>
+    <script src="js/backgrounds.js"></script>
+    <script src="js/kinetics.js"></script>
+    <script src="js/parallax.js"></script>
+
   </head>
   <body>
-    <h1>【奥山家】スマホの取り扱いルール</h1>
+    <!-- <h1>【奥山家】スマホの取り扱いルール</h1>
     <ul>
       <li>所有権は両親にあります</li>
       <li>使用できる時間は朝６時〜夜１０時まで</li>
@@ -33,6 +43,142 @@
       <li>自分や友達の個人を特定する情報や写真はアップロードしない<br>（写真は位置情報が含まれていることに注意）</li>
       <li>人に見られて困るような書き込みはしない</li>
       <li>知らない人から連絡があった場合、無視する。その後、必ず親に報告すること</li>
-    </ul>
+    </ul> -->
+
+    <!-- 仮想スクロールバーとナビゲーション -->
+    <div id="mock-scroller"></div>
+    <!-- <ul id="nav"></ul> -->
+
+
+    <!-- ページ全体を #content で囲む -->
+    <div id="content">
+
+
+    <section id="story-head">
+    <div class="story">
+    <h2>iPhoneの取扱について</h2><br>
+    <h1>奥山家ルール</h1>
+    <br>
+    <p>このiPhoneの所有権は両親にありますが、<br>
+      貸付を受け、利用する事を認めます。<br>
+      また、利用にあたっては、取り扱いルールを定めます。</p>
+    <p>ルールを守れない場合、iPhoneは没収です。<br>
+      また、利用状況に応じて、ルールは随時変更します。
+    </p>
+    </div>
+    </section>
+
+
+    <!-- 1つのセクション -->
+    <!--
+    ・必ずsectionにして、story- で始まるidを付ける。
+    -->
+    <section id="story-1">
+    <!-- 背景画像 -->
+    <img class="bg animate" src="img/1.jpg" anim-detached="true" />
+
+    <!-- コンテンツは .story で囲む。中身は自由。 -->
+    <div class="story">
+    <div>
+    <h2>Matters to be Observed</h2>
+    <h1>遵守すべき事項</h1>
+    <br><br><br>
+    <p1>以下、ルールと心得を示す。</p>
+    </div>
+    </div>
+
+
+    </section>
+    <!-- /1つのセクション -->
+
+
+    <!-- <section id="story-2" anim-pause="1000">
+    <img class="bg animate" src="img/2.jpg" anim-detached="true" />
+    <div class="story">
+    <div>
+    <h2>Pause</h2>
+    <p>指定のスクロール分停止させるられる。</p>
+    </div>
+    </div>
+    </section> -->
+
+
+    <section id="story-3">
+    <img class="bg animate" src="img/3.jpg" anim-detached="true" />
+    <div class="story">
+
+    <div>
+    <h2>Rules of Handling a iPhone</h2>
+    <p>iPhoneの取り扱いに関するルール<br><br><br><br><br>
+
+    <p class="txt_block"><p2>Rule 1</p2><br>
+    &nbsp;&nbsp;使用できる時間は、朝６時から夜１０時まで。<br>
+    </p>
+
+    <p class="txt_block">Rule 2<br>
+    &nbsp;&nbsp;保持しているアカウントは全て、<br>
+    &nbsp;&nbsp;パスワードを両親と共有すること</p>
+
+    <p class="txt_block">Rule 3<br>
+    &nbsp;&nbsp;テストの順位は<br>
+    &nbsp;&nbsp;100位以内であること。<br>
+    &nbsp;&nbsp;（生活態度が悪くても、<br>
+    &nbsp;&nbsp;iPhoneを没収する事があります）</p>
+
+    <p class="txt_block">Rule 4<br>
+    &nbsp;&nbsp;壊れた場合は自己責任です。<br>
+    &nbsp;&nbsp;修理代は小遣いで賄うこと</p>
+
+    <p class="txt_block">Rule 5<br>
+    アプリのインストール、<br>
+    音楽の購入は都度相談すること。</p>
+
+    <p class="txt_block">Rule 6<br>
+    &nbsp;&nbsp; 以下のアプリは利用禁止。<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;・LINE<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;・Facebook<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;・Instagram<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;・Twitter</p>
+
+    </p>
+    </div>
+    </div>
+    </section>
+
+    <section id="story-4">
+    <img class="bg animate" src="img/5.jpg" anim-detached="true" />
+
+    <div class="story">
+    <!-- <img class="img_move1 animate" src="img/5_img_1.png" anim-detached="true" /> -->
+    <!-- <img class="img_move2 animate" src="img/5_img_2.png" anim-detached="true" /> -->
+    <div>
+    <h2 class="txt_move1 animate" anim-detached="true">What you ought to know</h2>
+    <h3 class="txt_move1 animate" anim-detached="true">心得</h3>
+    <p class="txt_move2 animate" anim-detached="true">
+    ・SNSや、掲示板の情報は鵜呑みにしない<br>
+    （不確かな情報が多い。トラブルのもと。）<br>
+    ・自分や友達の個人を特定する情報や写真はアップロードしない<br>
+    （写真には位置情報が含まれていることに注意！！）<br>
+    ・人に見られて困るような事は<br>
+    SNSや掲示板に書き込まない<br>
+    ・知らない人から連絡があった場合は無視する事。<br>
+    また、必ず両親に報告する事。
+    </p>
+    </div>
+    </div>
+    </section>
+
+
+    <!-- 一番下にボックス必須？ ないと表示がおかしくなる。 -->
+    <section id="story-foo">
+    <div class="story">
+    <h2>END</h2>
+    <p>以上</p>
+    </div>
+    </section>
+
+
+    </div>
+
   </body>
 </html>
